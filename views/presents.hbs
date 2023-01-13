@@ -1,0 +1,34 @@
+<body>
+  <div>
+      <div>
+        <form method="GET" action="/presents/search"> 
+          <h2>Search by present name</h2>
+          <input type="text" name="name"/>
+          <button class="buttonadd" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+      <div>
+        <h2>Add a present to the Santa's list</h2>
+          <form method="POST" action="/presents/new">
+            <label>Present</label>
+            <input required type="text" name="name" placeholder="Plush.."/>
+            <label>For</label>
+            <input required type="text" name="recipient" placeholder="Maria..."/>
+            <label>Price</label>
+            <input required type="number" name="price" placeholder="35..."/>
+            <label>Picture</label>
+            <input required type="text" name="image" placeholder="https://..."/>
+            <label>Description</label>
+            <textarea required name="description" placeholder="I like this present because..."></textarea>
+            <button class="buttonadd" type="submit">Add Present</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="present1">
+    {{#each presents}}
+      {{>presentPartial this}}
+    {{/each}}
+  </div>
+</body>

@@ -1,0 +1,20 @@
+<body>
+  <div>
+    {{#with present}}
+      <div>
+        <div>
+          <img height="350" src="{{image}}" alt="{{name}}"/>
+        </div>  
+        <div>
+          <h2>{{name}}</h2>
+          <p>Recipient:<br>{{recipient}}</p>
+          <p>Price:<br>{{price}}</p>
+          <p>Description:<br>{{description}}</p>
+          <div>
+            <a href="/presents/delete/{{_id}}">Delete Present</a>
+          </div>
+        </div>
+    </div>
+    {{/with}} 
+  </div>
+</body>

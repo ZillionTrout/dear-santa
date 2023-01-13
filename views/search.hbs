@@ -1,0 +1,23 @@
+<body>
+  <h3>Results for: {{query}}</h3>
+  <div>
+    {{#if present}}
+      {{#with present}}
+        <div>
+          <div>
+            <img height="400" src="{{image}}" alt="{{name}}"/>
+          </div>  
+          <div>
+            <h2>{{name}}</h2>
+            <p>Price:<br>{{price}}</p>
+            <p>Recipient:<br>{{recipient}}</p>
+            <p>Description:<br>{{description}}</p>
+            <div>
+              <a href="/presents/delete/{{_id}}">Delete Present</a>
+            </div>
+          </div>
+        </div>
+    {{/with}}
+    {{/if}} 
+  </div>
+</body>

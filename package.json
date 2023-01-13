@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "seed": "node ./db/data.js"
+    "seed": "node ./db/data"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
