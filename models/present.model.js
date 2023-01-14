@@ -16,6 +16,10 @@ const presentSchema = new Schema({
   recipient: {
     type: String,
     required: true
+  },
+  description: {
+    type: String,
+    required: false
   }
 });
 
